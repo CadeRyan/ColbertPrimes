@@ -9,14 +9,3 @@ C:\Users\cader\source\repos\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\
 C:\Users\cader\source\repos\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.AssemblyInfo.cs
 C:\Users\cader\source\repos\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.dll
 C:\Users\cader\source\repos\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.pdb
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\bin\Debug\netcoreapp2.1\ColbertPrimes.deps.json
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\bin\Debug\netcoreapp2.1\ColbertPrimes.runtimeconfig.json
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\bin\Debug\netcoreapp2.1\ColbertPrimes.runtimeconfig.dev.json
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\bin\Debug\netcoreapp2.1\ColbertPrimes.dll
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\bin\Debug\netcoreapp2.1\ColbertPrimes.pdb
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.csprojAssemblyReference.cache
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.csproj.CoreCompileInputs.cache
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.AssemblyInfoInputs.cache
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.AssemblyInfo.cs
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.dll
-C:\Users\cader\Desktop\ColbertPrimes\ColbertPrimes\obj\Debug\netcoreapp2.1\ColbertPrimes.pdb

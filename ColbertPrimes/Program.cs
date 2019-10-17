@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Net;
 using System.Net.Mail;
 using System.Numerics;
@@ -12,39 +13,73 @@ namespace ColbertPrimes
     {
         static void Main(string[] args)
         {
-            Stopwatch stopWatch = new Stopwatch();
-            stopWatch.Start();
+            int n = 31100000; //update value for n as starting value
+            BigInteger twoN = BigInteger.Pow(2, n);
+            Console.WriteLine("Starting...");
+            double composite = 0;
+            List<int> possiblePrimes = new List<int>();
 
-            List<Task> tasks = new List<Task>();
-
-            for(int n = 13160; n < 13170; n ++)
+            for (int count = 0; count < 1000; count ++)
             {
-                object arg = n;
-                var task = new TaskFactory().StartNew(new Action<object>((test) =>
+                BigInteger proth = new BigInteger();
+                int k = 21181;
+
+                Stopwatch watch = new Stopwatch();
+
+                watch.Start();
+                proth = k * twoN + 1;
+                watch.Stop();
+                Console.WriteLine("Time to calculate proth number: " + watch.ElapsedMilliseconds);
+
+
+                watch.Restart();
+                if (IsPossiblyPrime(proth))
                 {
-                    BigInteger proth = new BigInteger();
-                    BigInteger k = 5;
+                    Console.WriteLine("Possible Prime");
+                    possiblePrimes.Add(n);
+                    //write number to a file
+                }
+                else
+                {
+                    Console.WriteLine("Not Prime");
+                    composite++;
+                }
+                watch.Stop();
+                Console.WriteLine("Time to evalute possible primality: " + watch.ElapsedMilliseconds);
 
-                    //PrimeChecker pc = new PrimeChecker();
-                    Console.WriteLine((int)test);
-                    proth = k * BigInteger.Pow(2, (int)test) + 1;
-                    if (proth.IsProbablyPrime())
-                    {
-                        //SendMeAnEmail(k.ToString(), n.ToString());
-                        Console.WriteLine("Prime!   " + (int)test);
-                    }
-                    Console.WriteLine("Thread done");
-                }), arg);
+                // do something with the list of n's
 
-                tasks.Add(task);
+                twoN *= 2;
+                n++;
             }
 
-            Task.WaitAll(tasks.ToArray());
+            string path = @"C:\Users\cader\Desktop\possiblePrimes.txt";
+            TextWriter tw = new StreamWriter(path);
 
-            stopWatch.Stop();
+            foreach (int s in possiblePrimes)
+            {
+                Console.WriteLine(s);
+                tw.WriteLine(s);
+            }
 
-            Console.WriteLine(stopWatch.ElapsedMilliseconds);
+            tw.Close();
+
+            Console.WriteLine(n);
+
+            Console.WriteLine("Percentage eliminated: " + composite/1000);
             Console.ReadKey();
+        }
+
+        static bool IsPossiblyPrime(BigInteger proth)
+        {
+            for(int i = 0; i < Primes.smallPrimes.Length; i++)
+            {
+                if(proth % Primes.smallPrimes[i] == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         static void SendMeAnEmail(string k, string n)

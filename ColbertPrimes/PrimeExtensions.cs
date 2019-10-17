@@ -63,15 +63,21 @@ namespace ColbertPrimes
                     x = BigInteger.ModPow(x, 2, value);
 
                     if (x == 1)
+                    {
+                        //Console.WriteLine("done, false");
                         return false;
+                    }
                     if (x == value - 1)
                         break;
                 }
 
                 if (x != value - 1)
+                {
+                    //Console.WriteLine("done, false");
                     return false;
+                }
             }
-
+            //Console.WriteLine("done, true");
             return true;
         }
     }
