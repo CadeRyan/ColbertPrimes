@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cader\\source\\repos\\ColbertPrimes\\ColbertPrimes\\ColbertPrimes.csproj": {}
+    "C:\\Users\\cader\\Desktop\\ColbertPrimes\\ColbertPrimes\\ColbertPrimes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cader\\source\\repos\\ColbertPrimes\\ColbertPrimes\\ColbertPrimes.csproj": {
+    "C:\\Users\\cader\\Desktop\\ColbertPrimes\\ColbertPrimes\\ColbertPrimes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cader\\source\\repos\\ColbertPrimes\\ColbertPrimes\\ColbertPrimes.csproj",
+        "projectUniqueName": "C:\\Users\\cader\\Desktop\\ColbertPrimes\\ColbertPrimes\\ColbertPrimes.csproj",
         "projectName": "ColbertPrimes",
-        "projectPath": "C:\\Users\\cader\\source\\repos\\ColbertPrimes\\ColbertPrimes\\ColbertPrimes.csproj",
+        "projectPath": "C:\\Users\\cader\\Desktop\\ColbertPrimes\\ColbertPrimes\\ColbertPrimes.csproj",
         "packagesPath": "C:\\Users\\cader\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cader\\source\\repos\\ColbertPrimes\\ColbertPrimes\\obj\\",
+        "outputPath": "C:\\Users\\cader\\Desktop\\ColbertPrimes\\ColbertPrimes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
